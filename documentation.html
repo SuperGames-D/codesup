@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodeSup Documentation</title>
+    <link rel="icon" type="image/x-icon" href="codesup-icon.png">
+    <style>
+body {font-family: Arial, Helvetica, sans-serif; background-image: linear-gradient(#000000, #000000);
+
+height: 100vh;
+	@include flex-center-hv;
+	flex-direction: column;
+	position: relative;
+
+}
+textarea {
+  resize: none;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #424242;
+  color: #ffffff;
+}
+button {
+  background-image: url(https://raw.githubusercontent.com/SuperGames-D/GameSup/main/button_empty.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 48px;
+  width: 124px;
+  border: none;
+  font-size: 20px;
+}
+
+button span {
+  display: none;
+}
+
+
+.center {
+  text-align: center;
+}
+</style>
+
+    </style>
+</head>
+<body>
+
+
+<h1 style="color: white"><a href="https://supergames-d.github.io/codesup" style="color: white"><img src="codesup-icon.png" alt="icon" width="60" height="60"></a>CodeSup</h1>
+<p>
+
+<div class="center">
+
+<h1 style="color: white">CodeSup Documentation</h1>
+<p style="padding: 0px; border: 2px solid white; width: 100%; font-size: 20px; color: white;"></p>
+
+<h2 style="color: white">Introduction to the editor</h2>
+  <p style="padding: 0px; border: 0px solid white; width: 40%; font-size: 20px; color: white; margin: auto;">
+    The <a style="color: white" href="https://supergames-d.github.io/codesup/editor">editor</a> is where you can create projects with CodeSup.
+At the top, there is a place where you can enter the project's name. That name will be seen while running the project or downloading the file.
+      Then you have options to save it as a .txt file, load the file, and run the project.
+Below that you have the script area, where you can enter your project's script.
+  </p>
+    <br>
+    <br>
+  <h2 style="color: white">Programming</h2>
+
+  <p style="padding: 0px; border: 0px solid white; width: 40%; font-size: 20px; color: white; margin: auto;">
+The first key to programming in CodeSup is understanding the structure of a line.
+Each line has this structure: </p>
+    <p style="padding: 0px; border: 2px solid white; width: 30%; font-size: 20px; color: white; margin: auto; background-color: #424242">
+        function=parameters;
+</p>
+    <br>
+  <p style="padding: 0px; border: 0px solid white; width: 40%; font-size: 20px; color: white; margin: auto;">
+Function tells the program exactly what to do, it can be print, if, etc.
+The parameters specify what to do with the function, for example print=Hello.
+If there is more than one parameter, they are separated by a colon:
+    </p>
+    <p style="padding: 0px; border: 2px solid white; width: 30%; font-size: 20px; color: white; margin: auto; background-color: #424242">
+function=parameter1:parameter2;
+    </p>
+    <br>
+<p style="padding: 0px; border: 0px solid white; width: 40%; font-size: 20px; color: white; margin: auto;">
+All lines must end in a semicolon. Even the last one.
+  </p>
+
+    <br>
+    <br>
+    <h2 style="color: white">Functions</h2>
+    <p style="padding: 0px; border: 0px solid white; width: 40%; font-size: 20px; color: white; margin: auto;">
+Here is a list of the functions in CodeSup:
+  </p>
+    <br>
+    <br>
+
+    <h3 style="color: white">Print</h3>
+
+     <p style="padding: 0px; border: 0px solid white; width: 40%; font-size: 20px; color: white; margin: auto;">
+Print lets you display any text. For example:
+  </p>
+    <p style="padding: 0px; border: 2px solid white; width: 30%; font-size: 20px; color: white; margin: auto; background-color: #424242">
+print=Hello World!;
+    </p>
+    <br>
+    <p style="padding: 0px; border: 0px solid white; width: 40%; font-size: 20px; color: white; margin: auto;">
+Output:
+  </p>
+    <p style="padding: 0px; border: 2px solid white; width: 30%; font-size: 20px; color: white; margin: auto; background-color: #424242">
+Hello World!
+    </p>
+    <br>
+    <br>
+    <br>
+        <h3 style="color: white">Storage</h3>
+
+     <p style="padding: 0px; border: 0px solid white; width: 40%; font-size: 20px; color: white; margin: auto;">
+         Storage lets you work with a variable.
+There are many storage functions. We'll talk about each one individually.
+  </p>
+    <h4 style="color: white">storage.save</h4>
+
+     <p style="padding: 0px; border: 0px solid white; width: 40%; font-size: 20px; color: white; margin: auto;">
+storage.save will set the value of the variable:
+  </p>
+    <p style="padding: 0px; border: 2px solid white; width: 30%; font-size: 20px; color: white; margin: auto; background-color: #424242">
+storage.save=Hi
+    </p>
+    <br>
+    <p style="padding: 0px; border: 0px solid white; width: 40%; font-size: 20px; color: white; margin: auto;">
+The program will save "Hi".
+  </p>
+    <br>
+     <h4 style="color: white">storage.get</h4>
+
+     <p style="padding: 0px; border: 0px solid white; width: 40%; font-size: 20px; color: white; margin: auto;">
+You can then load that value with storage.get. This function does not require any parameters.
+  </p>
+    <p style="padding: 0px; border: 2px solid white; width: 30%; font-size: 20px; color: white; margin: auto; background-color: #424242">
+storage.get=;
+    </p>
+    <br>
+    <p style="padding: 0px; border: 0px solid white; width: 40%; font-size: 20px; color: white; margin: auto;">
+Output:
+  </p>
+    <p style="padding: 0px; border: 2px solid white; width: 30%; font-size: 20px; color: white; margin: auto; background-color: #424242">
+Hi
+    </p>
+    <br>
+    <h4 style="color: white">storage.input</h4>
+
+     <p style="padding: 0px; border: 0px solid white; width: 40%; font-size: 20px; color: white; margin: auto;">
+storage.input will ask the user what value the variable should be set to. You can customize the prompt message as well. Here is an example:
+  </p>
+    <p style="padding: 0px; border: 2px solid white; width: 30%; font-size: 20px; color: white; margin: auto; background-color: #424242">
+storage.input=Value;
+    </p>
+    <br>
+    <p style="padding: 0px; border: 0px solid white; width: 40%; font-size: 20px; color: white; margin: auto;">
+Output:
+  </p>
+<img src="docs-img1.png" alt="image">
+    <p style="padding: 0px; border: 0px solid white; width: 40%; font-size: 20px; color: white; margin: auto;">
+And the program will save your input.
+  </p>
+    <br>
+
+       <h3 style="color: white">If</h3>
+
+     <p style="padding: 0px; border: 0px solid white; width: 40%; font-size: 20px; color: white; margin: auto;">
+If lets you check if two values are the same. It requires four parameters.
+  </p>
+        <p style="padding: 0px; border: 0px solid white; width: 40%; font-size: 20px; color: white; margin: auto;">
+Structure:
+  </p>
+    <p style="padding: 0px; border: 2px solid white; width: 30%; font-size: 20px; color: white; margin: auto; background-color: #424242">
+if=value1:value2:result-if-true:result-if-false;
+    </p>
+    <br>
+     <p style="padding: 0px; border: 0px solid white; width: 40%; font-size: 20px; color: white; margin: auto;">
+It will check if value1 and value2 are the same. If they are, it will display result-if-true, if they are not, it will display result-if-false
+  </p>
+    <br>
+    <p style="padding: 0px; border: 0px solid white; width: 40%; font-size: 20px; color: white; margin: auto;">
+Example 1:
+  </p>
+    <p style="padding: 0px; border: 2px solid white; width: 30%; font-size: 20px; color: white; margin: auto; background-color: #424242">
+if=4:4:yes:no;
+    </p>
+    <br>
+    <p style="padding: 0px; border: 0px solid white; width: 40%; font-size: 20px; color: white; margin: auto;">
+Output:
+  </p>
+    <p style="padding: 0px; border: 2px solid white; width: 30%; font-size: 20px; color: white; margin: auto; background-color: #424242">
+yes
+    </p>
+        <br>
+    <br>
+    <p style="padding: 0px; border: 0px solid white; width: 40%; font-size: 20px; color: white; margin: auto;">
+Example 2:
+  </p>
+    <p style="padding: 0px; border: 2px solid white; width: 30%; font-size: 20px; color: white; margin: auto; background-color: #424242">
+if=4:3:yes:no;
+    </p>
+    <br>
+    <p style="padding: 0px; border: 0px solid white; width: 40%; font-size: 20px; color: white; margin: auto;">
+Output:
+  </p>
+    <p style="padding: 0px; border: 2px solid white; width: 30%; font-size: 20px; color: white; margin: auto; background-color: #424242">
+no
+    </p>
+    <br>
+    <br>
+    <h4 style="color: white">Connection with storage</h4>
+    <p style="padding: 0px; border: 0px solid white; width: 40%; font-size: 20px; color: white; margin: auto;">
+You can use storage in the if function as well. Just replace the first parameter with "storage", and the program will check if the stored value and the second parameter are the same. Here's an example:
+  </p>
+
+    <br>
+     <p style="padding: 0px; border: 2px solid white; width: 30%; font-size: 20px; color: white; margin: auto; background-color: #424242">
+         storage.save=3;
+if=storage:3:yes:no;
+    </p>
+    <br>
+    <p style="padding: 0px; border: 0px solid white; width: 40%; font-size: 20px; color: white; margin: auto;">
+Output:
+  </p>
+    <p style="padding: 0px; border: 2px solid white; width: 30%; font-size: 20px; color: white; margin: auto; background-color: #424242">
+yes
+    </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3 style="color: white">That's the end!</h3>
+    <h2 style="color: white">Was this helpful?</h2>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+</div>
+</body>
+</html>
