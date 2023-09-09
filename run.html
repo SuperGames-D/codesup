@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Run CodeSup</title>
+    <link rel="icon" type="image/x-icon" href="codesup-icon.png">
+    <style>
+body {font-family: Arial, Helvetica, sans-serif; background-image: linear-gradient(#000000, #000000);}
+textarea {
+  resize: none;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #424242;
+  color: #ffffff;
+}
+button {
+  background-image: url(https://raw.githubusercontent.com/SuperGames-D/GameSup/main/button_empty.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 48px;
+  width: 124px;
+  border: none;
+  font-size: 20px;
+}
+
+button span {
+  display: none;
+}
+
+
+.center {
+  text-align: center;
+}
+
+</style>
+</head>
+<body onload="run()">
+
+
+<h1 style="color: white"><a href="https://supergames-d.github.io/codesup" style="color: white"><img src="codesup-icon.png" alt="icon" width="60" height="60"></a>Run CodeSup</h1>
+<p>
+<h2 style="color: white" id="filename"></h2>
+<br>
+
+<button onclick = "share()">Share</button> <text style="color: white; font-size: 20" id="copy_message"></text>
+<br>
+
+
+<h3 style="color: white">Output:</h3>
+<p style="padding: 0px; border: 2px solid white; width: 40%; font-size: 20px; color: white;" id="run"></p>
+
+
+
+<script src="run.js"></script>
+
+
+
+
+</body>
+</html>
