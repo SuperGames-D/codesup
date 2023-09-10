@@ -1,3 +1,4 @@
+// Code to download the file
 const downloadFile = () => {
          const link = document.createElement("a");
          const content = document.querySelector("textarea").value;
@@ -8,6 +9,7 @@ const downloadFile = () => {
          URL.revokeObjectURL(link.href);
       }
 
+// Code to upload a file
 const streamToText = async (blob) => {
       const readableStream = await blob.getReader();
       const chunk = await readableStream.read();
@@ -32,6 +34,7 @@ document.getElementById("code").value = fileContent;
       })();
     });
 
+// When you click the run button in the editor
 function runPage() {
 var code = document.getElementById("code").value;
 var url = "https://supergames-d.github.io/codesup/run.html?code=" + code + "&name=" + document.getElementById("filename").value;
@@ -39,7 +42,7 @@ window.open(url, '_blank');
 }
 
 
-
+// I think this part is useless, I was going to use it at first but then I didn't
 var modal = document.getElementById("myModal");
 
 var btn = document.getElementById("share");
